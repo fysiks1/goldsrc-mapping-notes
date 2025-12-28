@@ -5,8 +5,13 @@ A map overview requires two files: a bitmap (.bmp) image and a description file 
 ## Acquiring Image from In-Game
 
 - Set `-dev` for the launch options in Steam
-- Set `Display Mode` to `Normal` (if on `Widescreen`)
-- Set `Resolution` to `1024x768`
+- Launch the game
+- Configure Video Settings
+  - Set `Display Mode` to `Normal` (if on `Widescreen`)
+  - Set `Resolution` to `1024x768`
+  - (Recommended) Check `Run in a window`
+  - Apply Settings (this will restart the game)
+- Start the map with `map <mapname>` in console
 - Set the following cvars:
   - `sv_cheats 1`
   - `_cl_minimap 0`
@@ -24,6 +29,8 @@ A map overview requires two files: a bitmap (.bmp) image and a description file 
 - Clean up:
   - Set `Display Mode` back to `Widescreen`
   - Set `Resolution` back to desired resolution
+  - Uncheck `Run in a window`
+  - Apply changes
   - Exit the game
   - Remove `-dev` from the launch options
 
